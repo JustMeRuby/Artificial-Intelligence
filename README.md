@@ -1,1 +1,1 @@
-Homework for "Artificial Intelligence" course.
+Assignments of "Artificial Intelligence" course.
