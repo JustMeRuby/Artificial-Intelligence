@@ -1,0 +1,26 @@
+<div class="notebook">
+
+<div class="nb-cell program" name="p1">
+ăn_cỏ(dê).
+
+hung_dữ(sói).
+ăn_thịt(X) :- hung_dữ(X).
+
+đv_ăn_thịt(X) :- ăn_thịt(X).
+đv_ăn_cỏ(X) :- ăn_cỏ(X).
+
+ăn(X, Y) :- đv_ăn_thịt(X), đv_ăn_cỏ(Y).
+
+uống(X, nước) :- ăn_cỏ(X); ăn_thịt(X).
+
+tiêu_thụ(X, Y) :- ăn(X, Y); uống(X, Y).
+</div>
+
+<div class="nb-cell query" name="q1">
+hung_dữ(X),
+write('Động vật hung dữ: '), write(X),
+tiêu_thụ(X, Y)
+
+</div>
+
+</div>
